@@ -135,7 +135,7 @@ h1,h2,h3{
     .links{display:none;}
    #hblocks{
    position: absolute;
-   top: 15dvh;
+   top: 130px;
    left: 0;
    width: 100%;
    z-index: -10;
