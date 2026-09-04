@@ -18,15 +18,33 @@
             <!-- <h1>Squishi</h1> -->
              <img src="./src/sq.svg" style="width: clamp(100px,100px,300px); border-radius: 10px;box-shadow: inset 0 0 20px -10px black;" alt="">
             <ul class="links">
-                <li><a href=""><h3>Services</h3></a></li>
-                <li><a href=""><h3>Who we are</h3></a></li>
-                <li><a href=""><h3>Our Goal</h3></a></li>
+               
+                <li><a href="#home"><h3>Home</h3></a></li>
+                <li><a href="#services"><h3>Services</h3></a></li>
+                <li><a href="#about"><h3>Who we are</h3></a></li>
+                <li><a href="#goal"><h3>Our Goal</h3></a></li>
+                <li><a href="#policies"><h3>Policies</h3></a></li>
             </ul>
             <button class="contact_b"><h2>Contact Us</h2></button>
         </div>
+        <div class="header-bar">
+            <!-- <h1>Squishi</h1> -->
+             <button popovertarget="pop"><img src="src/./menu.svg" width="100%" alt="" ></button>
+             
+            
+            
+        </div>
+        <dialog popover="auto" id="pop">
+                <ul class="links-bar">
+                <li><a href="#home"><h3>Home</h3></a></li>
+                <li><a href="#services"><h3>Services</h3></a></li>
+                <li><a href="#about"><h3>Who we are</h3></a></li>
+                <li><a href="#goal"><h3>Our Goal</h3></a></li>
+                <li><a href="#policies"><h3>Policies</h3></a></li>
+            </ul></dialog>
     </div>
 
-    <div class="hero-wrap">
+    <div class="hero-wrap" id="home">
         <div class="hero">  
             <div style="display: flex; flex-direction: column; justify-content:space-between;">
                <div style="display: flex; flex-direction: column; gap: 3rem;"> <h1>MODULAR PLAY SETS <em>FOR HIRE</em></h1>
@@ -39,5 +57,7 @@
       
 
     </div>
+
+   
 </body>
 </html>
