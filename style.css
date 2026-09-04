@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border : none ;
+    line-height: 30px;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:active{
+    color : var(--baby-pink)
+}
+p{
+    font-size: 1.5rem;
+}
+em{
+    color: var(--baby-pink);
+    
+}
+@keyframes jiggle {
+    0%{
+        transform: scaleX(1.3);
+    }
+    50%{
+        transform: scaleY(1.2);
+
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+:root{
+--thistle: #cdb4dbff;
+--pastel-petal: #ffc8ddff;
+--baby-pink: #ffafccff;
+--icy-blue: #bde0feff;
+--sky-blue: #a2d2ffff;
+--w: whitesmoke ;
+--b :#271b10;
+--cream:#FFF8EF;
+--mint:#AEE6D3;
+--mint-deep:#7ED4B8;
+--lav:#C9BCF0;
+--lav-deep:#A891E8;
+background-color: var(--cream);
+font-family:'Doppio One',sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color:  var(--baby-pink) transparent;
+}
+
+body{
+    width: 100dvw;
+    height: 100dvh;
+}
+::selection{
+    background-color: var(--baby-pink);
+}
+h1,h2,h3{
+    font-family: 'Baloo 2',cursive;
+    font-weight:700;
+  }
+
+.header-wrap{
+    background-color: transparent;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    color: var(--b);
+    padding: 1rem;
+    z-index: 10;
+
+}
+.header{
+    width: 100%;
+    background-color: var(--sky-blue);
+    border-radius: 1rem;
+    padding: 0.5rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.links{
+    display: flex ;
+    justify-content: space-around;
+    gap: 4rem;
+    align-items: center;
+}
+
+.contact_b{
+    width: 10rem;
+    aspect-ratio: 3/1;
+    border-radius: 60px;    
+    font-family: 'Doppio One';
+    background-color: var(--baby-pink);
+    box-shadow: 0 5px 1px 1px var(--pastel-petal) , 0 10px 1px 1px var(--baby-pink) ;
+    color : white ;
+
+}
+.contact_b:hover{
+    animation: jiggle 0.5s 0.05s 1  ;
+}
+
+.hero-wrap{
+    margin: 18rem auto;
+    padding: 2rem 2rem;
+    box-shadow: inset 0 0  20px -5px var(--icy-blue);
+    border-radius: 10px;
+    max-width: 1100px;
+    font-size: 20px;
+    background-color: rgba(0, 115, 255, 0.07);
+    color: var(--b);
+}
+.hero{
+    display: flex;
+}
+#hblocks{
+    position: relative;
+    width: 50%;
+
+}
+
+
+@media (max-width:920px){
+    .links{display:none;}
+   #hblocks{
+   position: absolute;
+   top: 15dvh;
+   width: 100%;
+   z-index: -10;
+   }
+  }
