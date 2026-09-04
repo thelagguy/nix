@@ -21,6 +21,7 @@ a:hover{
 }
 p{
     font-size: 1.5rem;
+    color: rgba(33, 25, 18, 0.7);
 }
 em{
     color: white;
@@ -54,7 +55,7 @@ button:active{
 --icy-blue: #bde0feff;
 --sky-blue: #a2d2ffff;
 --w: whitesmoke ;
---b :#271b10;
+--b :#1d1711;
 --cream:#FFF8EF;
 --mint:#AEE6D3;
 --mint-deep:#7ED4B8;
@@ -67,7 +68,7 @@ font-family:'Doppio One',sans-serif;
 html{
     scroll-behavior: smooth;
     scrollbar-width: thin;
-    scrollbar-color:  var(--baby-pink) transparent;
+    scrollbar-color:  var(--b) transparent;
 }
 
 body{
@@ -169,23 +170,18 @@ button:hover{
     .hero-wrap{
         background-color: rgba(0, 115, 255, 0.3);
     }
-    em{ 
-        /* background-color: transparent; */
     
-        /* color: var(--mint); */
-        /* text-shadow:  0 0 1px var(--b); */
-    }
     h1{
         line-height: 50px;
     }
     #pop{
         position: sticky;
-        left: 5%;
-        top: 20%;
+        left: 0;
         background-color: var(--sky-blue);
         border-radius: 10px;
         font-size: 2rem;
         height: fit-content;
+        margin: 10rem 1rem;
         padding: 1rem;
         color: white;
         text-decoration: underline solid var(--baby-pink) 2px;
